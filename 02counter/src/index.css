@@ -109,3 +109,10 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+button{
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 480px;
+}
