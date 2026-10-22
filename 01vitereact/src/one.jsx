@@ -1,0 +1,10 @@
+function One() {
+    return(
+        <>
+        <h1>This is first heading</h1>
+        <h2>This is second heading</h2>
+        </>
+    )    
+}
+
+export default One
