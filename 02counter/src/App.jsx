@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  let counter = 10
+  let [counter, setCounter] = useState(10);
+  
   
   const addValue = () => {
-    counter = counter + 1 
-    console.log("Value Added : " + counter);
-       
-  }
+    if(counter < 20){
+    setCounter(counter +1);
+  }}
+    
+  const removeValue = () => {
+    if (counter > 0) {
+    setCounter(counter - 1)
+  }}
+
 
   return (
     <>
@@ -19,9 +22,9 @@ function App() {
       <h2>Counter value : {counter}</h2>
       <br />
 
-      <button onClick={addValue} >Add value</button>
+      <button onClick={addValue} >Add value {counter}</button>
       <br />
-      <button>Remove value</button>
+      <button onClick={removeValue}>Remove value {counter}</button>
 
 
     </>
