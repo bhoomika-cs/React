@@ -1,4 +1,6 @@
 function Student(props){
+    console.log("props", props);
+    
     return(
         <>
         <h2>Name : {props.Name}</h2>
