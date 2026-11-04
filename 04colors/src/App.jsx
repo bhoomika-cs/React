@@ -41,14 +41,24 @@ function App() {
           style={{backgroundColor : "Pink"}}>Pink</button>
 
           <button 
-          onClick={()=>setColor("White")}
-          className="outline-none px-4 rounded-full text-black shadow-lg "
-          style={{backgroundColor : "white"}}>White</button>
-
-          <button 
           onClick={()=>setColor("black")}
           className="outline-none px-4 rounded-full text-white shadow-lg "
           style={{backgroundColor : "black"}}>Black</button>
+
+          <button 
+          onClick={()=>setColor("orchid")}
+          className="outline-none px-4 rounded-full text-white shadow-lg "
+          style={{backgroundColor : "orchid"}}>Orchid</button>
+
+          <button 
+          onClick={()=>setColor("grey")}
+          className="outline-none px-4 rounded-full text-white shadow-lg "
+          style={{backgroundColor : "grey"}}>Grey</button>
+
+          <button 
+          onClick={()=>setColor("olive")}
+          className="outline-none px-4 rounded-full text-white shadow-lg "
+          style={{backgroundColor : "olive"}}>Olive</button>
         </div>
       </div>
     </div>
